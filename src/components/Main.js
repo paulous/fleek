@@ -18,7 +18,7 @@ export default function Main({Switch, Link, Route}){
     return<MainCont>
         <Nav {...{Link}}/>
         <Switch>
-            <Route path={'/'}><div>Home</div></Route>
+            <Route path={'/'} exact ><div>Home</div></Route>
             <Route path={'/one'}><One /></Route>
             <Route path={'/two'}><Two /></Route>
             <Route path={'/three'}><Three /></Route>
