@@ -1,12 +1,12 @@
-import styled from 'styled-components'
+import {HashRouter as Router, Switch, Link, Route} from 'react-router-dom'
+import Main from './components/Main'
 
-const Main = styled.div`
-  font-size:3rem;
-`
 function App() {
   return (
     <div className="App">
-     <Main>Paulous on Fleek!</Main>
+		<Router>
+			<Main {...{Switch, Link, Route}} />
+		</Router>
     </div>
   );
 }
